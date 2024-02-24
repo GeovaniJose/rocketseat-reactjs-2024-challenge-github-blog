@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components'
 
+import { DefaultLayout } from './layouts/DefaultLayout'
 import { defaultTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 
@@ -8,7 +9,7 @@ export function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
 
-      <h1>Github Blog</h1>
+      <DefaultLayout />
     </ThemeProvider>
   )
 }
